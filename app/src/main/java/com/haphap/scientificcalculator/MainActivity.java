@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     double angka = Double.valueOf(etAngka.getText().toString().trim());
                     double sin = Math.sin(Math.toRadians(angka));
-                    
+
                     tvHasil.setText(df.format(sin));
                 } catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "FIELD TIDAK BOLEH KOSONG", Toast.LENGTH_SHORT).show();
@@ -73,7 +73,12 @@ public class MainActivity extends AppCompatActivity {
                     double angka = Double.valueOf(etAngka.getText().toString().trim());
                     double tan = Math.tan(Math.toRadians(angka));
 
-                    tvHasil.setText(df.format(tan));
+                    if (tan > 3) {
+                        tvHasil.setText("Not Defined");
+                    } else {
+                        tvHasil.setText(df.format(tan));
+                    }
+
                 } catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "FIELD TIDAK BOLEH KOSONG", Toast.LENGTH_SHORT).show();
                 }
@@ -87,7 +92,12 @@ public class MainActivity extends AppCompatActivity {
                     double angka = Double.valueOf(etAngka.getText().toString().trim());
                     double csc = 1/Math.sin(Math.toRadians(angka));
 
-                    tvHasil.setText(df.format(csc));
+                    if (csc > 3) {
+                        tvHasil.setText("Not Defined");
+                    } else {
+                        tvHasil.setText(df.format(csc));
+                    }
+
                 }catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "FIELD TIDAK BOLEH KOSONG", Toast.LENGTH_SHORT).show();
                 }
@@ -101,7 +111,12 @@ public class MainActivity extends AppCompatActivity {
                     double angka = Double.valueOf(etAngka.getText().toString().trim());
                     double sec = 1/Math.cos(Math.toRadians(angka));
 
-                    tvHasil.setText(df.format(sec));
+                    if (sec > 3) {
+                        tvHasil.setText("Not Defined");
+                    } else {
+                        tvHasil.setText(df.format(sec));
+                    }
+
                 }catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "FIELD TIDAK BOLEH KOSONG", Toast.LENGTH_SHORT).show();
                 }
@@ -115,7 +130,12 @@ public class MainActivity extends AppCompatActivity {
                     double angka = Double.valueOf(etAngka.getText().toString().trim());
                     double cot = 1/Math.tan(Math.toRadians(angka));
 
-                    tvHasil.setText(df.format(cot));
+                    if (cot > 3) {
+                        tvHasil.setText("Not Defined");
+                    } else {
+                        tvHasil.setText(df.format(cot));
+                    }
+
                 }catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "FIELD TIDAK BOLEH KOSONG", Toast.LENGTH_SHORT).show();
                 }
