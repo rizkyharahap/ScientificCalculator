@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scientific Calculator</string>
+    <string name="logaritma">LOGARITMA</string>
+    <string name="cot">COT</string>
+    <string name="sec">SEC</string>
+    <string name="csc">CSC</string>
+    <string name="tan">TAN</string>
+    <string name="cos">COS</string>
+    <string name="sin">SIN</string>
+    <string name="masukan_angka">Masukan Angka</string>
+    <string name="_0_0">0.0</string>
+</resources>
